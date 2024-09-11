@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./neweb.css">
+    <title>yaser</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <img class="logo" src="الشعار الاخير2.png" alt="nothing">
+        </nav>
+        <nav class="things">
+            <a href="#searchBar" data-lang-en="Personal blog" data-lang-ar="مدونة شخصية">Personal blog</a>
+            <span class="menu-icon">☰</span>
+            <button onclick="toggleLanguage()" id="langButton">العربية</button>
+        </nav>
+    </header>
+
+    <div class="blur-background"></div> <!-- الخلفية المغوشة -->
+    <div class="menu-content">
+        <a href="page1.html" data-lang-en="Owner and Executor"  data-lang-ar="المالك والمنفذ">Owner and Executor</a>
+        <a href=""  data-lang-en="the proposing"  data-lang-ar="صاحب الاقتراح">The proposing</a>
+        <a href="https://yaserhostggg.github.io/nweb/" data-lang-en="My Personal Blog"  data-lang-ar="مدونتي الشخصية">My Personal Blog</a>
+    </div>
+
+
+
+    <input type="text" id="searchBar" class="search-bar" placeholder="search" oninput="searchCards()">
+    <div class="main">
+        <div class="text" id="text" data-lang-en="ADD NEW" data-lang-ar="أضف جديد"></div>
+    </div>
+
+
+    <section id="projects">
+        <a href="./John Kennedy.html">
+        <div class="project-card" id="John Kennedy" id="جون كينيدي">
+            <div class="project-imge">
+                <img src="data:image/jpeg;base64,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" alt="Project Image">
+            </div>
+            <div class="project-info">
+                <p class="project-category" id="project-category" data-lang-en="John Fitzgerald Kennedy, known as JFK, is the thirty-fifth President of the United States of America. Born on May 29, 1917, he died on November 22, 1963. He served as president from 1961 to 1963, and faced many political challenges, including the Cuban Missile Crisis and the Civil Rights Movement. He was killed in an assassination in Dallas, Texas." data-lang-ar="جون فيتزجيرالد كينيدي، المعروف بجون كينيدي، هو الرئيس الخامس والثلاثون للولايات المتحدة الأمريكية. وُلد في 29 مايو 1917 وتوفي في 22 نوفمبر 1963. تولى الرئاسة من 1961 إلى 1963، وواجه العديد من التحديات السياسية، بما في ذلك أزمة الصواريخ الكوبية وحركة الحقوق المدنية. قُتل في حادث اغتيال في دالاس، تكساس.">
+                    John Fitzgerald Kennedy, known as JFK, is the thirty-fifth President of the United States of America. Born on May 29, 1917, he died on November 22, 1963. He served as president from 1961 to 1963, and faced many political challenges, including the Cuban Missile Crisis and the Civil Rights Movement. He was killed in an assassination in Dallas, Texas.
+                </p>
+                <strong class="project-title">
+                    <span data-lang-en="John Kennedy" data-lang-ar="جون كينيدي">John Kennedy</span>
+                </strong>
+            </div>
+        </div>
+        </a>
+
+    <a href="./hassanin.html">
+        <div class="project-card"  id="حسنين رائد" id="hassanein raed">
+            <div class="project-imge">
+                <img src="https://scontent.fbgw66-1.fna.fbcdn.net/v/t39.30808-1/417438352_2126809101039202_1070495385144445784_n.jpg?stp=dst-jpg_s200x200&_nc_cat=102&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=j5qw9K_AYE0Q7kNvgEgFLGF&_nc_ht=scontent.fbgw66-1.fna&_nc_gid=A_9AThF_ZMdFb4CHtOQTMOB&oh=00_AYDp4E5LKZJr0yXXAYeTB0Cfvmxcmi38wlr18cZAidYR7A&oe=66E53B33" alt="Another Project Image">
+            </div>
+            <div class="project-info">
+                <p class="project-category" data-lang-en="Hassanein Raed is the eldest son of Raed Daher's family, born September 24, 2005, Al-Zahir faced many academic and social challenges including the most difficult challenge to complete Al-Zahir was born in the city of Hilla in Babil Governorate to an Iraqi father and mother of origin from Babil Governorate" data-lang-ar="حسنين رائد هو الابن الأكبر لعائلة رائد ضاهر ، من مواليد 24 سبتمبر 2005 ، واجه الظاهر العديد من التحديات الدراسية والاجتماعية بما في ذلك التحدي الأصعب لإكماله ولد الظاهر في مدينة الحلة في محافظة بابل من أب  وام عراقيين الاصل من محافظة بابل">
+                    Hassanein Raed is the eldest son of Raed Daher's family, born September 24, 2005, Al-Zahir faced many academic and social challenges including the most difficult challenge to complete Al-Zahir was born in the city of Hilla in Babil Governorate to an Iraqi father and mother of origin from Babil Governorate
+                </p>
+                <strong class="project-title">
+                    <span data-lang-en="Hassanein Raed" data-lang-ar="حسنين رائد">Hassanein Raed</span>
+                </strong>
+            </div>
+        </div>
+    </a>
+    </section>
+
+
+     <footer class="footer">
+        <a href="https://yaserhostggg.github.io/nweb/"><p class="footer-title">Copyrights @ <span>Ysser ammar</span></p></a>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100027388380908&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/q_yaser5?fbclid=IwZXh0bgNhZW0CMTAAAR3SNCCPV0SFov_rDVTGZYRuBw8nGpHxqLvpcea2tnxfTqbNf8YqjEYPULs_aem_AUNLr7ASDueR5765H5JB6meM4lwc3cHN53PH63U06Xny89WXNshwgAzWaB55WH1WZFDjxN9jrZF2o3HyZHh6ihE2"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/Yasser%20Ammar?fbclid=IwZXh0bgNhZW0CMTAAAR2mWbA6PWsBXAySyDcu2KXtHgQbZC-t4lIavSXa_-fSgC2nnYr53t9ICXw_aem_AUN4afyisRIUaw2JjUePV7v102Vwz1ur4b6Xz1PDPy5U8as2lHNV2xAe3la2xXJtoHR2Qra8NS0lwBaD61NqFSNW"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@yasser_g2g?_t=8n5jylNL4hm&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </footer>
+    <script src="./java.js"></script>
+    <script src="https://kit.fontawesome.com/192fe9387c.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شاشة البداية</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        #splash {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #splash h1 {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="splash">
+        <img src="your-logo.png" alt="شعارك" width="200">
+        <h1>مرحبا بك في موقعي</h1> <!-- يمكنك تغيير النص هنا -->
+    </div>
+
+    <script>
+        // إعادة التوجيه بعد ثانيتين
+        setTimeout(function() {
+            window.location.href = "main-page.html"; // الانتقال إلى الصفحة الرئيسية
+        }, 2000); // 2000 ميلي ثانية = ثانيتين
+    </script>
+</body>
+</html>
